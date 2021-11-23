@@ -15,6 +15,7 @@ brew 'git'
 
 tap 'homebrew/services'
 brew 'postgresql'
+brew 'redis'
 
 brew 'gh'
 

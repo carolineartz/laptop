@@ -275,6 +275,7 @@ Other folks who prefer `chruby`:
 - [Homebrew Cask] for quickly installing Mac apps from the command line
 - [Homebrew Services] so you can easily stop, start, and restart services
 - [Nodenv] to easily install and manage Node versions
+- [Redis] for storing key-value data
 - [Rails] for creating modern web apps
 - [Postgres] for storing relational data
 - [ruby-install] for installing different versions of Ruby
@@ -287,6 +288,7 @@ Other folks who prefer `chruby`:
 [homebrew cask]: http://caskroom.io/
 [homebrew services]: https://github.com/Homebrew/homebrew-services
 [Nodenv]: https://github.com/nodenv/nodenv
+[redis]: https://redis.io/
 [postgres]: http://www.postgresql.org/
 [rails]: https://rubyonrails.org
 [ruby]: https://www.ruby-lang.org/en/
@@ -321,7 +323,6 @@ above to get started. It lets you install the following tools and Mac apps:
 - [Flux] for adjusting your Mac's display color so you can sleep better
 - [GitHub Desktop] for working with your repos using a GUI
 - [iTerm2] - an awesome replacement for the macOS Terminal
-- [Redis] for storing key-value data
 - [Sublime Text 3] - a solid and fast code editor
 - [Visual Studio Code] - Microsoft's popular code editor
 
@@ -329,7 +330,6 @@ above to get started. It lets you install the following tools and Mac apps:
 [flux]: https://justgetflux.com/
 [github desktop]: https://desktop.github.com/
 [iterm2]: https://iterm2.com/
-[redis]: https://redis.io/
 [sublime text 3]: https://www.sublimetext.com/3
 [visual studio code]: https://code.visualstudio.com/
 
