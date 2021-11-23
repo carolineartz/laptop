@@ -1,6 +1,6 @@
 # Laptop
 
-[![Build Status](https://travis-ci.org/carolineartz/laptop.svg)](https://travis-ci.org/carolineartz/laptop)
+FORK OF https://github.com/monfresh/laptop to remove Jekyll and Heroku toolbelt as well as move Redis to default installs.
 
 Laptop is a script that will set up a complete Ruby web development environment on your Mac, including Node, Postgres, and Rails. You also have the option to skip those web dev tools and only install the minimum required to use Ruby.
 
