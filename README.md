@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/monfresh/laptop.svg)](https://travis-ci.org/monfresh/laptop)
 
-Laptop is a script that will set up a complete Ruby web development environment on your Mac, including Node, Postgres, Rails, and Jekyll. You also have the option to skip those web dev tools and only install the minimum required to use Ruby.
+Laptop is a script that will set up a complete Ruby web development environment on your Mac, including Node, Postgres, and Rails. You also have the option to skip those web dev tools and only install the minimum required to use Ruby.
 
 It can be run multiple times on the same machine safely. It installs,
 upgrades, or skips packages based on what is already installed on the machine.
@@ -27,7 +27,6 @@ the script to install additional tools.
 - [Debugging script failures](#debugging-script-failures)
 - [How to tell if the script worked](#how-to-tell-if-the-script-worked)
 - [How to create a new Rails app](#how-to-create-a-new-rails-app)
-- [How to create a new Jekyll site](#how-to-create-a-new-jekyll-site)
 - [How to switch between Ruby versions and install different versions](#how-to-switch-between-ruby-versions-and-install-different-versions)
 - [Check the Node installation](#check-the-node-installation)
 - [Next steps](#next-steps)
@@ -61,7 +60,7 @@ most popular ones are: RVM, rbenv, chruby, and asdf. I have chosen `chruby` in t
 install these tools, and they all require additional configuration in your [shell startup file](https://www.moncefbelyamani.com/which-shell-am-i-using-how-can-i-switch/), such as `.bash_profile` or `.zshrc`.
 
 When attempting to install and configure a Ruby manager manually, it's easy to
-miss or fumble a step due to human error or incomplete or outdated instructions. 
+miss or fumble a step due to human error or incomplete or outdated instructions.
 
 Since all of the steps are automatable, **the best and most reliable way to set up Ruby on a Mac is to run this script**. I test it regularly on my spare laptop where I delete the hard drive and install fresh versions of macOS. If you've already attempted to set up a development environment on your Mac, and you run into issues with my script, please read through the entire [prerequisites](https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/#prerequisites) section, which includes a link to troubleshoot issues. If that doesn't help, feel free to open an issue, and I will do my best to help you.
 
@@ -100,7 +99,7 @@ Supported shells:
 - fish (see the note at the bottom of this README)
 
 ## Install
-**IMPORTANT! CHECK ALL OF THE ITEMS BELOW BEFORE AND AFTER RUNNING THE SCRIPT!** 
+**IMPORTANT! CHECK ALL OF THE ITEMS BELOW BEFORE AND AFTER RUNNING THE SCRIPT!**
 
 ### Check prerequisites
 Make sure your computer meets all [prerequisites](https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/#prerequisites) first.
@@ -194,15 +193,11 @@ This should point to the `.rubies` directory in your home folder. For example:
 
 Once you've installed the script successfully and restarted your terminal, [creating a new Rails app](https://www.moncefbelyamani.com/how-to-install-rails-and-create-a-new-rails-app-on-a-mac-the-easy-way/) takes just 3 more steps.
 
-## How to create a new Jekyll site
-
-Similarly to Rails, [creating a new Jekyll site](https://www.moncefbelyamani.com/how-to-install-jekyll-on-a-mac-the-easy-way/#create-a-new-jekyll-site) is just as easy.
-
 ## How to switch between Ruby versions and install different versions
 
 The first time you run the script, it will install both the latest Ruby (currently 3.0.2) as well as Ruby 2.7.4, which is the version that is compatible with most gems at the moment. If you run the script again, it will check for newer 3.x versions, and if it finds one, it will install it. You will still have Ruby 2.7.4. That's the advantage of using version managers like `chruby`. You can have many different versions installed at the same time and you can switch between them.
 
-**Ruby 3.0 is still very new, so it's not yet fully compatible with gems like Rails or Jekyll. So, before you create a new Rails app or Jekyll site, make sure you're using Ruby 2.7.4. Keep reading for instructions.**
+**Ruby 3.0 is still very new, so it's not yet fully compatible with gems like Rails. So, before you create a new Rails app, make sure you're using Ruby 2.7.4. Keep reading for instructions.**
 
 To check if you have Ruby 2.7.4 installed, run this command:
 
@@ -224,7 +219,7 @@ You should run `chruby 2.7.4` before you start any new project to make sure you 
 
 Another highly-recommended way to automatically switch between versions is to add a `.ruby-version` file in your Ruby project with the version number prefixed with `ruby-`, such as `ruby-2.7.4`. To test that this works:
 
-1. `cd` into your Ruby project, such as your Rails app or Jekyll site
+1. `cd` into your Ruby project such as your Rails app
 2. First, check to see if the file already exists: `cat .ruby-version`. If not, then create it in the next step.
 2. Create a file called `.ruby-version` with `ruby-2.7.4` in it:
     ```shell
@@ -235,7 +230,7 @@ Another highly-recommended way to automatically switch between versions is to ad
 4. `cd` into your project
 5. Verify that `ruby -v` shows `2.7.4p191`
 
-Note that gems only get installed in a specific version of Ruby at a time. If you installed jekyll in 3.0.2, and then you install 2.7.4 later, you'll have to install jekyll again in 2.7.4.
+Note that gems only get installed in a specific version of Ruby at a time.
 
 ## Check the Node installation
 
@@ -276,11 +271,9 @@ Other folks who prefer `chruby`:
 - [Bundler] for managing Ruby gems
 - [chruby] for managing [Ruby] versions (recommended over RVM and rbenv)
 - [GitHub CLI] brings GitHub to your terminal.
-- [Heroku Toolbelt] for deploying and managing Heroku apps
 - [Homebrew] for managing operating system libraries
 - [Homebrew Cask] for quickly installing Mac apps from the command line
 - [Homebrew Services] so you can easily stop, start, and restart services
-- [Jekyll] for creating static sites
 - [Nodenv] to easily install and manage Node versions
 - [Rails] for creating modern web apps
 - [Postgres] for storing relational data
@@ -290,11 +283,9 @@ Other folks who prefer `chruby`:
 [bundler]: http://bundler.io/
 [chruby]: https://github.com/postmodern/chruby
 [github cli]: https://cli.github.com
-[heroku toolbelt]: https://toolbelt.heroku.com/
 [homebrew]: http://brew.sh/
 [homebrew cask]: http://caskroom.io/
 [homebrew services]: https://github.com/Homebrew/homebrew-services
-[jekyll]: https://jekyllrb.com
 [Nodenv]: https://github.com/nodenv/nodenv
 [postgres]: http://www.postgresql.org/
 [rails]: https://rubyonrails.org

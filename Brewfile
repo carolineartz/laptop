@@ -13,9 +13,6 @@ brew 'ruby-install'
 
 brew 'git'
 
-tap 'heroku/brew'
-brew 'heroku'
-
 tap 'homebrew/services'
 brew 'postgresql'
 

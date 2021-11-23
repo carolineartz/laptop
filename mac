@@ -333,9 +333,6 @@ if [ -z "${ONLY_RUBY:-}" ]; then
   fancy_echo 'Installing Rails'
   gem install rails
 
-  fancy_echo 'Installing Jekyll'
-  gem install jekyll
-
   fancy_echo '...Finished Ruby installation checks.'
 
   fancy_echo "Installing node 16.13.0 ..."
