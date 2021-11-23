@@ -1,6 +1,6 @@
 # Laptop
 
-[![Build Status](https://travis-ci.org/monfresh/laptop.svg)](https://travis-ci.org/monfresh/laptop)
+[![Build Status](https://travis-ci.org/carolineartz/laptop.svg)](https://travis-ci.org/carolineartz/laptop)
 
 Laptop is a script that will set up a complete Ruby web development environment on your Mac, including Node, Postgres, and Rails. You also have the option to skip those web dev tools and only install the minimum required to use Ruby.
 
@@ -122,16 +122,16 @@ In your Terminal window, choose **ONE** of the options below, and copy and paste
 #### The recommended default installation for most people
 
 ```sh
-bash <(curl -s https://raw.githubusercontent.com/monfresh/laptop/master/laptop)
+bash <(curl -s https://raw.githubusercontent.com/carolineartz/laptop/master/laptop)
 ```
 
 #### The minimal installation for those that only want Ruby and nothing else
 
 ```sh
-ONLY_RUBY=true bash <(curl -s https://raw.githubusercontent.com/monfresh/laptop/master/laptop)
+ONLY_RUBY=true bash <(curl -s https://raw.githubusercontent.com/carolineartz/laptop/master/laptop)
 ```
 
-The [script](https://github.com/monfresh/laptop/blob/master/mac) itself is
+The [script](https://github.com/carolineartz/laptop/blob/master/mac) itself is
 available in this repo for you to review if you want to see what it does
 and how it works.
 
@@ -151,9 +151,9 @@ convenience by typing `laptop` and pressing `return` in your Terminal.
 ## Debugging script failures
 
 Your last `laptop` run will be saved to a file called `laptop.log` in your home
-folder. Read through it to see if you can debug the issue yourself, with the help of the [Troubleshooting Errors](https://github.com/monfresh/laptop/wiki/Troubleshooting-Errors) Wiki article. If not,
+folder. Read through it to see if you can debug the issue yourself, with the help of the [Troubleshooting Errors](https://github.com/carolineartz/laptop/wiki/Troubleshooting-Errors) Wiki article. If not,
 copy the entire contents of `laptop.log` into a
-[new GitHub Issue](https://github.com/monfresh/laptop/issues/new) (or attach the whole log file to the issue) for me and I'll be glad to help you.
+[new GitHub Issue](https://github.com/carolineartz/laptop/issues/new) (or attach the whole log file to the issue) for me and I'll be glad to help you.
 
 ## How to tell if the script worked
 
@@ -186,7 +186,7 @@ which ruby
 This should point to the `.rubies` directory in your home folder. For example:
 
 ```
-/Users/monfresh/.rubies/ruby-2.7.4/bin/ruby
+/Users/carolineartz/.rubies/ruby-2.7.4/bin/ruby
 ```
 
 ## How to create a new Rails app
@@ -305,8 +305,8 @@ internet connection).
 cd ~
 
 # Download the sample files to your computer
-curl --remote-name https://raw.githubusercontent.com/monfresh/laptop/master/.laptop.local
-curl --remote-name https://raw.githubusercontent.com/monfresh/laptop/master/Brewfile.local
+curl --remote-name https://raw.githubusercontent.com/carolineartz/laptop/master/.laptop.local
+curl --remote-name https://raw.githubusercontent.com/carolineartz/laptop/master/Brewfile.local
 
 # open the files in your text editor
 open .laptop.local

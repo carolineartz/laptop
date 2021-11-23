@@ -196,9 +196,9 @@ switch_to_ruby() {
 
 
 if [[ $SHELL == *fish ]]; then
-  append_to_file "$shell_file" "alias laptop='bash (curl -s https://raw.githubusercontent.com/monfresh/laptop/master/laptop | psub)'"
+  append_to_file "$shell_file" "alias laptop='bash (curl -s https://raw.githubusercontent.com/carolineartz/laptop/master/laptop | psub)'"
 else
-  append_to_file "$shell_file" "alias laptop='bash <(curl -s https://raw.githubusercontent.com/monfresh/laptop/master/laptop)'"
+  append_to_file "$shell_file" "alias laptop='bash <(curl -s https://raw.githubusercontent.com/carolineartz/laptop/master/laptop)'"
 fi
 
 if [[ ! $SHELL == *fish ]]; then
